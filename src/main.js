@@ -3,6 +3,7 @@ import { Navbar } from './components/Navbar';
 import Footer from './components/Footer'; 
 import './styles/style.css';
 
+
 window.addToTeam = function (id) {
   const team = JSON.parse(localStorage.getItem("team") || "[]");
 
