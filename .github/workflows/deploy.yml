@@ -1,25 +1,66 @@
+name: Deploy Vite to GitHub Pages
+
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      
-uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      
-name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm install
 
-      
-name: Build
-      run: npm run build
+      - name: Build
+        run: npm run build
 
-      
-name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+:thumbsup:
+Haz clic para reaccionar
+:pleading_face:
+Haz clic para reaccionar
+:white_check_mark:
+Haz clic para reaccionar
+Añadir reacción
+Responder
+Reenviar
+Más
+
+Enviar mensaje a @Player Marcos
+﻿
+¡Mejora a tus amigos! Regálales increíbles ventajas de chat con Nitro.
+Enviar GIF
+Enviar sticker
+Ejecutar aplicaciones
+Perfil de Player Marcos
+
+Más
+
+
+Player Marcos
+Añadir nota (solo es visible para ti)
+playermarcos
+Modo Streamer habilitado
+
+
+
+
+
+Current activity
+En canal de voz
+FemboyKrayonnecPlayer Marcos
+『🔉』𝕲𝖊𝖓𝖊𝖗𝖆𝖑
+en Grupo comunista alineado a las palomas
+Establece un estado de canal
+
+Abrir voz
+Sobre mí
+Sobre mí
+En un mundo de ciegos, el tuerto es el rey.
